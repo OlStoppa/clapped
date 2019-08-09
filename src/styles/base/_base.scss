@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
+
+html, body {
+	background: $light-blue;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: $s-size;
+	height: 100vh;
+	font-size: 60%;
+	width: 100vw;
+	box-sizing: border-box;
+	padding: none;
+	margin: 0;
+	
+}
+
+h1 {
+	margin: 0;
+}
+#app {
+	height: 100%;
+	width: 100%;
+}
+@-ms-viewport{
+  height: device-height;
+  width: device-width;
+}
+
+
+

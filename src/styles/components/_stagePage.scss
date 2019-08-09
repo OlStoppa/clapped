@@ -1,0 +1,32 @@
+.stage {
+	height: 100%;
+	width: 100%;
+	font-size: 15vw;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	vertical-align: center;
+}
+
+span {
+	align-self: center;
+}
+
+.bigCountdown {
+	align-self: center;
+	vertical-align: center;
+	background: red;
+	width: 100%;
+	height:100vh;
+
+}
+
+.smallCountdown--container {
+	
+	width: 100;
+	position: absolute;
+	font-size: $xl-size;
+	
+
+}

@@ -1,0 +1,39 @@
+.startButton {
+    
+    height: 40vh;
+     
+    border-bottom:black solid 4px ;
+    border-right: 3.2px black solid;
+    margin: 0;
+    background: linear-gradient(#767, $light-purple);
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border-radius: 20%;
+}
+.startBox__container {
+    
+    flex: 1;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-y: scroll;
+    /*justify-content: right;*/ 
+    overflow-x: hidden; 
+    
+
+}
+
+.start__link-box {
+    color: white;
+    font-size: $l-size ;
+    text-decoration: none;
+    display: flex;
+    /*justify-content: ;*/
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-left: $s-size;
+}

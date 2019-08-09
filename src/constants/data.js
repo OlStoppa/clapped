@@ -1,0 +1,1 @@
+export const dataList = [["yellow", "red", "blue"],["cow", "chicken", "pig"]];

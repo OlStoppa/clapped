@@ -1,0 +1,81 @@
+
+@import './base/settings';
+@import './base/base';
+@import './components/header';
+@import './components/mainLinks';
+@import './components/sideNav';
+@import './components/startBox';
+@import './components/startPage';
+@import './components/stagePage';
+@import './components/modal';
+
+
+.win-view{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background:#55fadd;
+    height: 100%;
+
+    div {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        font-size: $l-size;
+    }
+    
+    
+}
+
+h4{
+    padding: 0;
+}
+
+.oliver {
+    color: white;
+}
+
+.header__edit {
+    display: flex;
+    justify-content: space-between;
+    background: lighten($light-blue, 5%);
+    color: white;
+    padding: 5px;
+    font-size: $l-size;
+}
+.container__edit {
+    height: 100vh;
+    background:whitesmoke;
+    text-align: center;
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    
+}
+
+.form__edit {
+    display: flex;
+    justify-content: space-between;
+    background: $light-blue;
+    padding: 10px;
+    align-items: center;
+
+    input {
+        height: 100%;
+        width: 70vw;
+        padding: 0;
+    }
+    button {
+        margin-left: 10px;
+        height: 100%;
+        width: 25vw;
+        background: $light-green;
+        border: none;
+    
+        font-size: $l-size;
+    }
+    
+}
