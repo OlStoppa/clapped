@@ -1,38 +1,99 @@
-
-.container {
-	display: grid;
-	text-align: center;
-	height: 30vh;
-	align-items: center;
-	width: 100%;
-	grid-template-columns: 1fr 1fr 1fr;
-	border: 5px black solid;
-	box-shadow: 10px 10px 8px 10px #888888;
+.container{
+  display: grid;
+  grid-gap: 20px;
+  text-align: center;
+  height: 40vh;
+  align-items: center;
+  padding: 0 35px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .main-link {
-	display: flex;
-	align-items: center;
-	position: relative;
-	border: none;
-	margin: 0;
-	height: 100%;
-	justify-content: center;
-	background: yellow;
-	outline: black solid 5px;
-	color: white;
-	font-weight: bold;
-	font-size: $l-size;
-	-webkit-text-stroke: .5px black;
-	text-decoration: none;		
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: none;
+  margin: 0;
+  height: 100%;
+  justify-content: center;
+  background: yellow;
+  
+  color: white;
+  font-weight: bold;
+  font-size: $l-size;
+  -webkit-text-stroke: 0.5px black;
+  text-decoration: none;
+  transform: perspective(800px) rotateY(0);
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in;
+  
+  
+  flex: 1;
+  background-color: lightblue;
+//   margin-left: 30px;
+  
 }
 
-.main-link--timeout{
-	background: darken($light-green, 10%);
+.main-link--timeout {
+  background: darken($light-green, 10%);
+  &::before {
+    background: darken(lightblue, 10%);
+    left: -20px;
+    height: 100%;
+    width: 25px;
+    transform: rotateY(-45deg);
+    transform-origin: center right;
+  }
+  &:hover {
+    transform: perspective(800px) rotateY(45deg);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+  }
 }
-.main-link--scramble{
-	background: $light-purple;
+.main-link--scramble {
+  background: $light-purple;
+  &::before {
+    background: lighten($light-purple, 20%);
+    top: -20px;
+    height: 25px;
+    width: 100%;
+    transform: rotateX(45deg);
+    transform-origin: center bottom;
+  }
+  &:hover {
+    transform: perspective(800px) rotateX(-25deg);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+  }
 }
-.main-link--generator{
-	background: $light-yellow;
+
+
+.main-link--generator {
+  background: $light-yellow;
+  &::before {
+    background: darken($light-yellow, 10%);
+    right: -20px;
+    height: 100%;
+    width: 25px;
+    transform: rotateY(45deg);
+    transform-origin: center left;
+  }
+  &:hover {
+    transform: perspective(800px) rotateY(-25deg);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+  }
 }
