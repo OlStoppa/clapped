@@ -18,6 +18,10 @@ module.exports = {
 			'css-loader',
 			'sass-loader'
 			]
+		},
+		{
+			test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+         use: ['file-loader']
 		}]
 	},
 	devtool: 'cheap-module-eval-source-map',

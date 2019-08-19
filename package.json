@@ -17,6 +17,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
+    "file-loader": "^4.2.0",
     "live-server": "^1.2.1",
     "node-sass": "^4.10.0",
     "normalize.css": "^8.0.0",
@@ -28,6 +29,7 @@
     "react-shuffle-text": "^1.0.6",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "typeface-neucha": "0.0.72",
     "validator": "^10.8.0",
     "webpack": "^4.24.0",
     "webpack-dev-server": "^3.7.2"
